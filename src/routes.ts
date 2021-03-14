@@ -1,6 +1,9 @@
 import {Router} from 'express';
 
+import UserController from './controllers/UserController'
+
 const router = Router();
 
-export default router;
+router.post('/user',UserController.store);
 
+export default router;
