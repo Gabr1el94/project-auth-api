@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx nodemon --exec ts-node src/index.ts",
+    "dev": "npx nodemon --exec ts-node --files src/index.ts",
     "typeorm": "npx ts-node ./node_modules/typeorm/cli.js"
   },
   "keywords": [],
@@ -13,6 +13,7 @@
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
     "@types/express": "^4.17.11",
+    "@types/jsonwebtoken": "^8.5.0",
     "express": "^4.17.1",
     "nodemon": "^2.0.7",
     "ts-node": "^9.1.1",
@@ -20,6 +21,7 @@
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^8.5.1",
     "reflect-metadata": "^0.1.13",
     "sqlite3": "^5.0.2",
     "typeorm": "^0.2.31"
